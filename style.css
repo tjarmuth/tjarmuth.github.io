@@ -157,7 +157,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* ===== Projekte ===== */
 .project { padding: 30px; }
-.project--spaced { margin-top: 24px; }
+.project--spaced { margin-top: 48px; }
 .project > p { margin: 0 0 16px; font-size: 15px; line-height: 1.65; }
 .project .list { margin-bottom: 24px; }
 .shots3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
