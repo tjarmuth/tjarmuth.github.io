@@ -135,7 +135,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 .shot figcaption, .gallery figcaption { margin-top: 8px; font-size: 13px; color: var(--muted); }
 .gallery { display: flex; flex-wrap: wrap; gap: 12px; }
 .gallery figure { margin: 0; width: 190px; max-width: 100%; }
+.gallery a { display: block; }
+.gallery a:focus-visible { outline: 3px solid var(--green-btn); outline-offset: 3px; border-radius: 10px; }
 .gallery img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 10px; }
+.gallery a img { cursor: zoom-in; }
 
 /* ===== Über mich ===== */
 .about { display: flex; align-items: center; gap: 28px; padding: 30px; }
