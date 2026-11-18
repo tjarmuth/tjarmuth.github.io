@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tjarmuth.github.io/sitemap.xml

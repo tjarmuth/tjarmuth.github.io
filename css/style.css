@@ -176,7 +176,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .legal { display: none; padding: 56px 24px 0; }
 .legal:target, .legal--page { display: block; }
 .legal-card { max-width: 860px; padding: 36px; }
-.legal h2 { margin-bottom: 18px; font-size: 34px; color: var(--green); }
+.legal h1 { margin-bottom: 18px; font-size: 34px; color: var(--green); }
 .legal h3 { margin: 24px 0 6px; font-family: var(--sans); font-size: 15px; font-weight: 700; color: var(--teal-dark); }
 .legal p { margin: 0 0 10px; font-size: 15px; line-height: 1.65; }
 .legal-back { margin-top: 28px !important; }
