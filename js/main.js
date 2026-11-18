@@ -1,19 +1,16 @@
-/* Sprache: gespeicherte Auswahl, sonst Browsersprache */
+/* Sprache: Browsersprache als Vorgabe, manuelle Auswahl nur für diesen Aufruf */
 (function () {
   var de = document.getElementById("lang-de");
   var en = document.getElementById("lang-en");
   if (!de || !en) return;
-  var saved = null;
-  try { saved = localStorage.getItem("lang"); } catch (e) {}
-  var wantEn = saved ? saved === "en" : /^en/i.test(navigator.language || "");
+  var wantEn = /^en/i.test(navigator.language || "");
   (wantEn ? en : de).checked = true;
-  document.documentElement.lang = en.checked ? "en" : "de";
-  function save() {
+  function updateLanguage() {
     document.documentElement.lang = en.checked ? "en" : "de";
-    try { localStorage.setItem("lang", en.checked ? "en" : "de"); } catch (e) {}
   }
-  de.addEventListener("change", save);
-  en.addEventListener("change", save);
+  updateLanguage();
+  de.addEventListener("change", updateLanguage);
+  en.addEventListener("change", updateLanguage);
 })();
 
 /* Mobiles Menü nach Klick auf einen Link wieder schließen */
