@@ -7,7 +7,9 @@
   try { saved = localStorage.getItem("lang"); } catch (e) {}
   var wantEn = saved ? saved === "en" : /^en/i.test(navigator.language || "");
   (wantEn ? en : de).checked = true;
+  document.documentElement.lang = en.checked ? "en" : "de";
   function save() {
+    document.documentElement.lang = en.checked ? "en" : "de";
     try { localStorage.setItem("lang", en.checked ? "en" : "de"); } catch (e) {}
   }
   de.addEventListener("change", save);
