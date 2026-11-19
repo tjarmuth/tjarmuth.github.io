@@ -84,6 +84,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .job-head h3 { font-size: 28px; color: var(--green); }
 .meta { margin: 6px 0 0; font-size: 14px; color: var(--muted); }
 .badge { align-self: flex-start; padding: 6px 14px; border-radius: 999px; background: #e6f1d9; color: #2f5a10; font-size: 13px; font-weight: 700; }
+.job-intro { margin: 0 0 18px; font-size: 15px; line-height: 1.65; }
+.job-duties { margin: 0 0 8px; color: var(--green); font-size: 14px; }
 
 .list li { position: relative; margin-bottom: 9px; padding-left: 22px; font-size: 15px; line-height: 1.6; }
 .list li::before { content: ""; position: absolute; left: 2px; top: 9px; width: 8px; height: 8px; border-radius: 50%; background: #5a9a22; }
@@ -213,6 +215,8 @@ ul { margin: 0; padding: 0; list-style: none; }
   .hero h1 { font-size: 34px; }
   .facts { gap: 10px; }
   .fact { padding: 16px; }
+  .about-grid { gap: 10px; padding: 12px 10px; }
+  .about-card { padding: 14px 15px; }
   .job { gap: 16px; padding: 18px; }
   .job-head { margin-bottom: 14px; }
   .job-head h3 { font-size: 24px; }
